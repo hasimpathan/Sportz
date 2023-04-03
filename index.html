@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header container">
+      <div class="header__wrapper">
+        <div class="header__left">
+          <a href="javascript:void(0)" class="header__back">
+            <img src="images/arrow-left.svg" alt="">
+          </a>
+          <h3 class="header__title">My Team</h3>
+        </div>
+        <div class="header__right">
+          <h4 class="header__right-timer">1h 26m 3s</h4>
+          <a href="javascript:void(0)" class="header__right-info" title="info">
+            <img src="images/info.svg" alt="info">
+        </a>
+        </div>
+    </div>
+  </header>
+  <!-- Main section -->
+  <main class="main">
+        <div class="container">
+            <!-- count -->
+            <section class="count">
+                <div class="count__wrapper">
+                    <div class="count__country">
+                        <img src="images/india_flag.svg" alt="flag" loading="lazy">
+                        <span class="count__country-name">INDIA</span>
+                    </div>
+                    <span class="count__score count__score--first">4</span>
+                </div>
+                <div class="count__wrapper">
+                    <div class="count__country">
+                        <img src="images/newzeland_flag.svg" alt="flag" loading="lazy">
+                        <span class="count__country-name">NEW ZEALAND</span>
+                    </div>
+                    <span class="count__score count__score--last">4</span>
+                </div>
+            </section>
+            <!-- Section Credits -->
+            <section class="credits">
+               <div class="credits__wrapper">
+                   <div class="credits__left">
+                        <div class="credits__left__desc">
+                            <h3 class="credits__left__desc-num">45<span>Credit Left</span></h3>
+                            <progress class="credits__left__desc-progress" value="32" max="100"> 32% </progress>
+                        </div>
+                        <div class="credits__left__desc">
+                            <h3 class="credits__left__desc-num">7/11<span>Players</span></h3>
+                            <progress class="credits__left__desc-progress" value="70" max="100"> 70% </progress>
+                        </div>
+                   </div>
+                   <div class="credits__right">
+                        <button class="tab-btn active" id="list_btn">
+                            <img src="images/list.svg" alt="list">
+                            List
+                        </button>
+                        <button class="tab-btn" id="pitch_btn">
+                            <img src="images/pitch.svg" alt="pitch">
+                            Pitch
+                        </button>
+                    </div>
+               </div>
+            </section>
+            <!-- Section Players-Data -->
+            <section class="players-data" id="player-data">
+                <div class="table-wrapper">
+                  <table class="table">
+                    <thead class="table__header">
+                      <tr class="table__row">
+                        <th class="table__heading table__heading--players">
+                          <span class="table__heading-text">Players</span>
+                        </th>
+                        <th class="table__heading table__heading--points">
+                          <span class="table__heading-text">Points</span>
+                        </th>
+                        <th class="table__heading table__heading--credits">
+                          <span class="table__heading-text">Credits</span>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody class="table__body">
+                      <!-- player data row -->
+                      <tr class="table__row">
+                        <td class="table__data ">
+                          <div class="table__data--players">
+                            <img class="table__jersey" src="images/india_jersey.svg" alt="Jersey">
+                            <div class="table__player">
+                              <span class="table__player-name">V Kohli</span>
+                              <span class="table__player-country">IND</span>
+                            </div>
+                          </div>
+                          
+                        </td>
+                        <td class="table__data table__data--points">
+                          <span class="table__points-number">330</span>
+                        </td>
+                        <td class="table__data">
+                          <div class="table__data--credits">
+                            <span class="table__credits-number">11.5</span>
+                            <span class="table__credits-icon table__credits-icon--plus-minus">
+                                <img src="images/add.svg" alt="+">
+                            </span>
+                          </div>
+                        </td>
+                      </tr>
+                      <!-- player data row -->
+                      <tr class="table__row">
+                        <td class="table__data">
+                          <div class="table__data--players">
+                            <img class="table__jersey" src="images/india_jersey.svg" alt="Jersey">
+                            <div class="table__player">
+                              <span class="table__player-name">R Sharma</span>
+                            <span class="table__player-country">IND</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="table__data table__data--points">
+                          <span class="table__points-number">325.5</span>
+                        </td>
+                        <td class="table__data">
+                          <div class="table__data--credits">
+                            <span class="table__credits-number">11</span>
+                            <span class="table__credits-icon table__credits-icon--plus-minus">
+                                <img src="images/add.svg" alt="+">
+                            </span>
+                          </div>
+                        </td>
+                      </tr>
+                      <!-- player data row -->
+                      <tr class="table__row act-active">
+                        <td class="table__data">
+                          <div class="table__data--players">
+                            <img class="table__jersey" src="images/newzeland_jersey.svg" alt="Jersey">
+                            <div class="table__player">
+                              <span class="table__player-name">J Neesham</span>
+                              <span class="table__player-country">NZ</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="table__data table__data--points">
+                          <span class="table__points-number">320</span>
+                        </td>
+                        <td class="table__data">
+                          <div class="table__data--credits">
+                            <span class="table__credits-number">10</span>
+                            <span class="table__credits-icon table__credits-icon--plus-minus">
+                                <img src="images/remove.svg" alt="-">
+                            </span>
+                          </div>
+                        </td>
+                      </tr>
+                      <!-- player data row -->
+                      <tr class="table__row">
+                        <td class="table__data">
+                          <div class="table__data--players">
+                            <img class="table__jersey" src="images/india_jersey.svg" alt="Jersey">
+                            <div class="table__player">
+                              <span class="table__player-name">R Pant</span>
+                            <span class="table__player-country">IND</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="table__data table__data--points">
+                          <span class="table__points-number">100</span>
+                        </td>
+                        <td class="table__data">
+                          <div class="table__data--credits">
+                            <span class="table__credits-number">9.5</span>
+                            <span class="table__credits-icon table__credits-icon--plus-minus">
+                                <img src="images/add.svg" alt="+">
+                            </span>
+                          </div>
+                        </td>
+                      </tr>
+                      <!-- player data row -->
+                      <tr class="table__row act-active">
+                        <td class="table__data">
+                          <div class="table__data--players">
+                            <img class="table__jersey" src="images/india_jersey.svg" alt="Jersey">
+                            <div class="table__player">
+                              <span class="table__player-name">A Patel</span>
+                            <span class="table__player-country">IND</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="table__data table__data--points">
+                          <span class="table__points-number">100</span>
+                        </td>
+                        <td class="table__data">
+                          <div class="table__data--credits">
+                            <span class="table__credits-number">11.5</span>
+                            <span class="table__credits-icon table__credits-icon--plus-minus">
+                                <img src="images/remove.svg" alt="-">
+                            </span>
+                          </div>
+                        </td>
+                      </tr>
+                      <!-- player data row -->
+                      <tr class="table__row">
+                        <td class="table__data">
+                          <div class="table__data--players">
+                            <img class="table__jersey" src="images/newzeland_jersey.svg" alt="Jersey">
+                            <div class="table__player">
+                              <span class="table__player-name">K Williamson</span>
+                            <span class="table__player-country">NZ</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="table__data table__data--points">
+                          <span class="table__points-number">100</span>
+                        </td>
+                        <td class="table__data">
+                          <div class="table__data--credits">
+                            <span class="table__credits-number">10</span>
+                            <span class="table__credits-icon table__credits-icon--plus-minus">
+                                <img src="images/add.svg" alt="+">
+                            </span>
+                          </div>
+                        </td>
+                      </tr>
+                      <!-- player data row -->
+                      <tr class="table__row">
+                        <td class="table__data">
+                          <div class="table__data--players">
+                            <img class="table__jersey" src="images/india_jersey.svg" alt="Jersey">
+                            <div class="table__player">
+                              <span class="table__player-name">S Thakur</span>
+                            <span class="table__player-country">IND</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="table__data table__data--points">
+                          <span class="table__points-number">100</span>
+                        </td>
+                        <td class="table__data">
+                          <div class="table__data--credits">
+                            <span class="table__credits-number">8.5</span>
+                            <span class="table__credits-icon table__credits-icon--plus-minus">
+                                <img src="images/add.svg" alt="+">
+                            </span>
+                          </div>
+                        </td>
+                      </tr>
+                      <!-- player data row -->
+                      <tr class="table__row act-active">
+                        <td class="table__data">
+                          <div class="table__data--players">
+                            <img class="table__jersey" src="images/newzeland_jersey.svg" alt="Jersey">
+                            <div class="table__player">
+                              <span class="table__player-name">M Henry</span>
+                            <span class="table__player-country">NZ</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="table__data table__data--points">
+                          <span class="table__points-number">100</span>
+                        </td>
+                        <td class="table__data">
+                          <div class="table__data--credits">
+                            <span class="table__credits-number">8</span>
+                            <span class="table__credits-icon table__credits-icon--plus-minus">
+                                <img src="images/remove.svg" alt="+">
+                            </span>
+                          </div>
+                        </td>
+                      </tr>
+                      <!-- Add more rows as needed -->
+                    </tbody>
+                  </table>
+                </div>
+                  
+            </section>
+            <!-- section Result -->
+            <section class="result" id="pitch-result">
+                <div class="container">
+                    <!-- players wrap-->
+                    <h4 class="player__role">Wicket Keeper</h4>
+                    <div class="players players--wrapper">
+                        <div class="player-card player-card--team-1">
+                          <img class="player-card__img" src="images/india_jersey.svg" alt="Player 1">
+                          <span class="player-card__captain">c</span>
+                          <h4 class="player-card__name">MS Dhoni</h4>
+                          <span class="player-card__salary">11cr</span>
+                        </div>
+                    </div>
+                    <!-- players wrap-->
+                    <h4 class="player__role">Batsman</h4>
+                    <div class="players players--wrapper">
+                        <div class="player-card player-card--team-1">
+                          <img class="player-card__img" src="images/india_jersey.svg" alt="Player 1">
+                          <span class="player-card__captain">vc</span>
+                          <h4 class="player-card__name">R Sharma</h4>
+                          <span class="player-card__salary">11cr</span>
+                        </div>
+                        <div class="player-card player-card--team-1">
+                            <img class="player-card__img" src="images/india_jersey.svg" alt="Player 1">
+                            <h4 class="player-card__name">V Kohli</h4>
+                            <span class="player-card__salary">11cr</span>
+                          </div>
+                          <div class="player-card player-card--team-2">
+                            <img class="player-card__img" src="images/newzeland_jersey.svg" alt="Player 1">
+                            <h4 class="player-card__name">K Williamson</h4>
+                            <span class="player-card__salary">11cr</span>
+                          </div>
+                          <div class="player-card player-card--team-2">
+                            <img class="player-card__img" src="images/newzeland_jersey.svg" alt="Player 1">
+                            <h4 class="player-card__name">J Neesham</h4>
+                            <span class="player-card__salary">11cr</span>
+                          </div>
+                          <div class="player-card player-card--team-1">
+                            <img class="player-card__img" src="images/india_jersey.svg" alt="Player 1">
+                            <h4 class="player-card__name">R Pant</h4>
+                            <span class="player-card__salary">11cr</span>
+                          </div>
+                        </div>
+                        <!-- players wrap-->
+                        <h4 class="player__role">All Rounder</h4>
+                        <div class="players players--wrapper">
+                          <div class="player-card player-card--team-1">
+                            <img class="player-card__img" src="images/india_jersey.svg" alt="Player 1">
+                                <h4 class="player-card__name">Ravindra Jadeja</h4>
+                                <span class="player-card__salary">11cr</span>
+                            </div>
+                            <div class="player-card player-card--team-2">
+                                <img class="player-card__img" src="images/newzeland_jersey.svg" alt="Player 1">
+                                <h4 class="player-card__name">J Neesham</h4>
+                                <span class="player-card__salary">11cr</span>
+                            </div>
+                    </div>
+                    <!-- players wrap-->
+                    <h4 class="player__role">Bowler</h4>
+                    <div class="players players--wrapper">
+                        <div class="player-card player-card--team-2">
+                            <img class="player-card__img" src="images/newzeland_jersey.svg" alt="Player 1">
+                            <h4 class="player-card__name">M Henry</h4>
+                            <span class="player-card__salary">11cr</span>
+                        </div>
+                        <div class="player-card player-card--team-1">
+                          <img class="player-card__img" src="images/india_jersey.svg" alt="Player 1">
+                          <h4 class="player-card__name">M Shami</h4>
+                          <span class="player-card__salary">11cr</span>
+                        </div>
+                        <div class="player-card player-card--team-2">
+                            <img class="player-card__img" src="images/newzeland_jersey.svg" alt="Player 1">
+                            <h4 class="player-card__name">T Southee</h4>
+                            <span class="player-card__salary">11cr</span>
+                        </div>
+                        <div class="player-card player-card--team-1">
+                            <img class="player-card__img" src="images/india_jersey.svg" alt="Player 1">
+                            <h4 class="player-card__name">J Bumrah</h4>
+                            <span class="player-card__salary">11cr</span>
+                          </div>
+                  </div>
+            </section>
+        </div>
+  </main>
+  <!-- Footer -->
+  <footer class="footer container" id="footer-btn">
+    <button class="footer__filter">
+      <span class="footer__filter-notification">3</span>
+      <img src="images/filter.svg" alt="">
+    </button>
+    <button class="primary-btn">Continue</button>
+  </footer>
+  <!-- custom JS -->
+  <script src="js/custom.js"></script>
+</body>
+</html>

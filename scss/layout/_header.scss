@@ -1,0 +1,29 @@
+// header
+.header{
+    padding: 0rem 1rem;
+  
+    &__wrapper{
+      @include flex-between;
+      padding: 2rem 1rem;
+    }
+    &__left,&__right{
+      @include flex-align-center;
+      gap: 2rem;
+    }
+    &__right{
+        &-timer{
+            padding: 0.5rem 1.2rem;
+            font-size: 1.2rem;
+            font-family: $primary-font;
+            font-weight: normal;
+            background: $bg-credit;
+            @include border-radius(0.4rem);
+        }
+    }
+    &__title{
+      font-size: 2rem;
+      font-family: $semibold-font;
+      font-weight: normal;
+      margin-bottom: 0;
+    }
+  }

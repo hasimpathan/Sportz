@@ -1,0 +1,28 @@
+// Primary Button
+.primary-btn {
+  background: $color-orange;
+  padding: 1.15rem 4.6rem;
+  color: $white;
+  cursor: pointer;
+  @include border-radius(0.4rem);
+}
+
+// Tab Button
+.tab-btn {
+  width: 6.9rem;
+  height: 3.8rem;
+  cursor: pointer;
+  background-color: $bg-secondary;
+  color: $white;
+  gap: 0.5rem;
+  @include flex-center;
+  @include border-radius(3.4rem);
+  @include transition(all, 0.3s, ease-in-out);
+
+  &:hover,
+  &:focus {
+    background: none;
+    outline: none;
+    border: none;
+  }
+}

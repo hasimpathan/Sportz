@@ -1,0 +1,30 @@
+// footer
+.footer {
+  @include flex-end;
+  gap: 2.9rem;
+  padding-top: 0;
+
+  &__filter {
+    position: relative;
+    @include border-radius(100%);
+    background-color: $color-orange;
+    padding: 1rem;
+    cursor: pointer;
+    line-height: 1;
+
+    &-notification {
+      position: absolute;
+      height: 1.3rem;
+      width: 1.3rem;
+      top: -3px;
+      right: 0px;
+      font-size: 0.8rem;
+      line-height: 1.2;
+      font-weight: 500;
+      color: $white;
+      background-color: $bg-notification;
+      border: 2px solid $notification-border;
+      @include border-radius(100%);
+    }
+  }
+}
